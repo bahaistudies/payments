@@ -5,13 +5,14 @@
   --gray-light: rgba(0, 0, 0, 0.4);
   --gray-mid: rgba(0, 0, 0, 0.7);
   --gray-dark: rgba(0, 0, 0, 0.9);
+  --transparent:#00000000;
   --body-color: var(--gray-mid);
   --headline-color: var(--gray-dark);
   --accent-color: #0066f0;
   --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 6px;
-  --logo-image: url("https://storage.googleapis.com/stripe-sample-images/KAVHOLM.svg");
-  --form-width: 650px;
+  --logo-image: url("https://journal.bahaistudies.ca/public/images/abs-black.png");
+  --form-width: 100vw;
 }
 
 /* Base */
@@ -23,6 +24,7 @@ body {
   font-size: 16px;
   color: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  border-radius: 5%;
 }
 h1,
 h2,
@@ -355,12 +357,6 @@ pre {
   }
 }
 
-/* Pasha styles – Brand-overrides, can split these out */
-:root {
-  --accent-color: #ed5f74;
-  --headline-color: var(--accent-color);
-  --logo-image: url("https://storage.googleapis.com/stripe-sample-images/logo-pasha.svg");
-}
 
 .pasha-image-stack {
   display: grid;
