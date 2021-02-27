@@ -9,6 +9,8 @@
   --body-color: var(--gray-mid);
   --headline-color: var(--gray-dark);
   --accent-color: #0066f0;
+  --basic: #0066f0bd;
+  --custom:#0064f0;
   --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 6px;
   --logo-image: url("https://journal.bahaistudies.ca/public/images/abs-black.png");
@@ -48,10 +50,8 @@ h4 {
 
 /* Layout */
 main {
-  display: flex;
-  flex-direction: row;
   width: 100vw;
-  max-width: 980px;
+  max-width: 100%;
   padding: 48px;
   align-content: center;
   justify-content: center;
@@ -267,7 +267,7 @@ input[type="number"]::placeholder {
 
 /* Buttons and links */
 button {
-  background: var(--accent-color);
+  background: var(--basic);
   border-radius: var(--radius);
   color: white;
   border: 0;
@@ -276,7 +276,12 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  display: block;
+}
+button.featured{
+  background: var(--accent-color);
+}
+button.custom{
+  background: var(--custom);
 }
 button:hover {
   filter: contrast(115%);
